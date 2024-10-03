@@ -228,6 +228,68 @@ Project image
     line-height: 1.25rem;
     margin: 0;
 }
+
+/* resume responsive designe start */
+/* Mobile and tablet responsive */
+@media (max-width: 768px) {
+    /* Stack columns vertically for screens below 768px */
+    .resume-sub-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Align text and containers better on smaller screens */
+    .resume-list {
+        grid-template-columns: 1fr;
+        border-left: none;
+    }
+
+    /* Adjust the size of the round div and padding */
+    .round-div {
+        height: 18px;
+        width: 18px;
+        left: -10px;
+    }
+    .resume-duration-container {
+        padding-left: 1rem;
+    }
+
+    /* Reduce padding and font sizes for smaller screens */
+    .resume-duration {
+        padding: 0.3rem 1rem;
+        font-size: 0.75rem;
+    }
+    .resume-company, .resume-designation {
+        font-size: 0.875rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Further adjustments for small mobile screens */
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 0.5rem;
+    }
+    
+    .resume-duration {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .subtitle {
+        font-size: 0.875rem;
+    }
+
+    .resume-company {
+        font-size: 0.875rem;
+    }
+}
+
+/* resume responsive designe end  */
+
+
 /* Certificates start */
 .certificates-container > 
 .subtitle-container {
@@ -319,6 +381,90 @@ Project image
 
 /* Certificates end */
 
+/* certificate part responsive start */
+
+/* Medium screens (tablets, landscape phones) */
+@media (max-width: 1024px) {
+    .certificates-sub-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .certificate-btn {
+        padding: 0.75rem 1rem;
+        font-size: 14px;
+    }
+
+    .certificate-name {
+        font-size: 13px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 11px;
+    }
+}
+
+/* Small screens (phones, portrait tablets) */
+@media (max-width: 768px) {
+    .certification-list {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .certificate-logo-container {
+        padding: 1rem;
+    }
+
+    .certificate-btn {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .certificate-name {
+        font-size: 12px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 10px;
+    }
+}
+
+/* Extra small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+    .certificates-container {
+        padding: 0 1rem;
+    }
+
+    .certification-list {
+        padding: 0.5rem;
+    }
+
+    .certificate-btn {
+        padding: 0.5rem;
+        font-size: 10px;
+    }
+
+    .certificate-name {
+        font-size: 11px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 9px;
+    }
+}
+
+/* certificate part responsive end */
+
+
 /* skills start  */
  .skills-sub-container{
    display: grid;
@@ -358,6 +504,78 @@ Project image
 }
 
 /* skills end  */
+/* skills responsive start  */
+/* Media Queries for responsiveness */
+
+/* For large screens (desktops and large tablets) */
+@media (min-width: 1024px) {
+    .skills-sub-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .skill, .percentage {
+      font-size: 14px;
+    }
+  
+    .progress {
+      height: 0.6rem;
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .skills-sub-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .skill, .percentage {
+      font-size: 12px;
+    }
+  
+    .progress {
+      height: 0.5rem;
+    }
+  }
+  
+  /* For small screens (mobile devices) */
+  @media (max-width: 767px) {
+    .skills-sub-container {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  
+    .skill, .percentage {
+      font-size: 12px;
+    }
+  
+    .progress {
+      height: 0.5rem;
+    }
+  
+    .skills-progress {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .percentage {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  /* For extra small screens (very small mobile devices) */
+  @media (max-width: 480px) {
+    .skill, .percentage {
+      font-size: 11px;
+    }
+  
+    .progress {
+      height: 0.4rem;
+    }
+  }
+  
+  /* skills responsive  end */
+
+
 
 /* Portfolio  start*/
 .projec-continer {
@@ -445,6 +663,50 @@ Project image
     cursor: pointer;
 }
 /* Contact end */
+
+/* contact responsive start */
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-info-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-info a,
+    .personal-info p {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .message-box h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Contact responsive end end */
 
 /* footer start  */
 .footer-container{

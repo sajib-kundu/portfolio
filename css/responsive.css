@@ -1,0 +1,157 @@
+
+
+/* certificate part responsive start */
+ /* Responsive Design */
+
+/* Medium screens (tablets, landscape phones) */
+@media (max-width: 1024px) {
+    .certificates-sub-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .certificate-btn {
+        padding: 0.75rem 1rem;
+        font-size: 14px;
+    }
+
+    .certificate-name {
+        font-size: 13px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 11px;
+    }
+}
+
+/* Small screens (phones, portrait tablets) */
+@media (max-width: 768px) {
+    .certification-list {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .certificate-logo-container {
+        padding: 1rem;
+    }
+
+    .certificate-btn {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .certificate-name {
+        font-size: 12px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 10px;
+    }
+}
+
+/* Extra small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+    .certificates-container {
+        padding: 0 1rem;
+    }
+
+    .certification-list {
+        padding: 0.5rem;
+    }
+
+    .certificate-btn {
+        padding: 0.5rem;
+        font-size: 10px;
+    }
+
+    .certificate-name {
+        font-size: 11px;
+    }
+
+    .certificate-org-name,
+    .certificate-date,
+    .certificate-link {
+        font-size: 9px;
+    }
+}
+
+/* certificate part responsive end */
+
+
+/* skills responsive start  */
+/* Media Queries for responsiveness */
+
+/* For large screens (desktops and large tablets) */
+@media (min-width: 1024px) {
+    .skills-sub-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .skill, .percentage {
+      font-size: 14px;
+    }
+  
+    .progress {
+      height: 0.6rem;
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .skills-sub-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .skill, .percentage {
+      font-size: 12px;
+    }
+  
+    .progress {
+      height: 0.5rem;
+    }
+  }
+  
+  /* For small screens (mobile devices) */
+  @media (max-width: 767px) {
+    .skills-sub-container {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  
+    .skill, .percentage {
+      font-size: 12px;
+    }
+  
+    .progress {
+      height: 0.5rem;
+    }
+  
+    .skills-progress {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .percentage {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  /* For extra small screens (very small mobile devices) */
+  @media (max-width: 480px) {
+    .skill, .percentage {
+      font-size: 11px;
+    }
+  
+    .progress {
+      height: 0.4rem;
+    }
+  }
+  
+  /* skills responsive  end */
