@@ -410,10 +410,22 @@ Project image
 
 /* Small screens (phones, portrait tablets) */
 @media (max-width: 768px) {
-    .certification-list {
+    /* .certification-list {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
+        min-height: 40px;
+    } */
+
+    .certification-list{
+        display: flex;
+        align-items: center ;
+        gap: 1.25rem;
+        border: 2px solid #444;
+        border-radius: 0.375rem;
+        transition: transform 0.3s ease;
+        margin-top: 1rem;
+        min-height: 60px;
     }
 
     .certificate-logo-container {
@@ -440,6 +452,16 @@ Project image
 @media (max-width: 480px) {
     .certificates-container {
         padding: 0 1rem;
+    }
+    .certification-list{
+        display: flex;
+        align-items: center ;
+        gap: 1.25rem;
+        border: 2px solid #444;
+        border-radius: 0.375rem;
+        transition: transform 0.3s ease;
+        margin-top: 1rem;
+        min-height: 60px;
     }
 
     .certification-list {
@@ -552,10 +574,16 @@ Project image
       height: 0.5rem;
     }
   
-    .skills-progress {
+    .skills-progress{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    /* .skills-progress {
       flex-direction: column;
       align-items: flex-start;
-    }
+      
+    } */
   
     .percentage {
       margin-top: 0.5rem;
